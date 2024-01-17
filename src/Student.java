@@ -8,7 +8,7 @@ public class Student extends Person{
     public int getGrade() {
         return grade;
     }
-
+    @Override
     public String toString() {
         return super.toString() + " Grade: " + grade;
     }

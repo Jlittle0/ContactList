@@ -13,7 +13,7 @@ public class Faculty extends Person{
     public void setOccupation(String occupation) {
         this.occupation = occupation;
     }
-
+    @Override
     public String toString() {
         return super.toString() + " Occupation: " + occupation;
     }

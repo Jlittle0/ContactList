@@ -159,8 +159,7 @@ public class ContactList {
         while (!exit) {
             // Until the user exits by selecting it from the menu, continue.
             displayMenu();
-            String userInput = input.nextLine();
-            switch (userInput) {
+            switch (input.nextLine()) {
                 // Cases for each of the menu items
                 case "0":
                     // Exit
@@ -171,8 +170,7 @@ public class ContactList {
                     System.out.println("Select a type of contact to add:");
                     System.out.println("1. Student");
                     System.out.println("2. Faculty");
-                    String secondInput = input.nextLine();
-                    addContact(secondInput);
+                    addContact(input.nextLine());
                     break;
                 case "2":
                     // Print contacts sorted by firstName
@@ -198,22 +196,19 @@ public class ContactList {
                     // Search for a contact by their firstName
                     // Returns null if they aren't found
                     System.out.println("Please enter their first name:");
-                    userInput = input.nextLine();
-                    System.out.println(searchByFirstName(userInput));
+                    System.out.println(searchByFirstName(input.nextLine()));
                     break;
                 case "7":
                     // Search for a contact by their lastName
                     // Returns null if they aren't found
                     System.out.println("Please enter their last name:");
-                    userInput = input.nextLine();
-                    System.out.println(searchByLastName(userInput));
+                    System.out.println(searchByLastName(input.nextLine()));
                     break;
                 case "8":
                     // Search for a contact by their phoneNumber
                     // Returns null if they aren't found
                     System.out.println("Please enter their phone number:");
-                    userInput = input.nextLine();
-                    System.out.println(searchByPhoneNumber(userInput));
+                    System.out.println(searchByPhoneNumber(input.nextLine()));
                     break;
                 default:
                     // Indicate that something went wrong with the user's input when prompted
